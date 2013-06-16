@@ -1,37 +1,34 @@
-	<div class="masthead clearfix">
-			
-		<div class="container">
-				
-			<div class="logo"><span>//</span> studio6</div>
-		
-			<ul class="nav main-nav">
-				<li class="active">
-					<a href="#work">Work</a>
-				</li>
-				<li>
-					//
-				</li>
-				<li>
-					<a href="#about">About</a>
-				</li>
-				<li>
-					//
-				</li>
-				<li>
-					<a href="#services">Services</a>
-				</li>
-				<li>
-					//
-				</li>
-				<li>
-					<a href="#contact">Contact</a>
-				</li>
-			</ul>
-					
-		</div>
-		
-	</div>
+	<div class="page-about" id="about">
 	
+		<div class="container">
+		
+			<div class="page-heading">
+				<h1><span>//</span> About</h1>
+			</div>
+			
+			<div class="row">
+			
+				<div class="span6 content">
+					
+					<h2>Maecenas feugiat lectus quam</h2>
+					
+					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
+				
+				</div>
+			
+				<div class="span6 content">
+				
+					<h2>Maecenas feugiat lectus quam</h2>
+					
+					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
+				
+				</div>
+			
+			</div>
+			
+		</div>
+	
+	</div>
 	
 	<div class="page-work" id="work">
 	
