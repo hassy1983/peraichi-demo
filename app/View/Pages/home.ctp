@@ -1,28 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-	<meta charset="utf-8">
-    <title>studio6</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-    <!-- Le styles -->
-    <link href="http://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.css" rel="stylesheet">
-    <link href="assets/css/portfolio.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/js/shadowbox/shadowbox.css">
-    
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-</head>    
-<body>
-	
 	<div class="masthead clearfix">
 			
 		<div class="container">
@@ -69,64 +44,64 @@
 		<ul class="thumbnails">
 		
 			<li class="span4">
-				<a href="assets/img/image_01.jpg" class="thumbnail">
-				  <img src="assets/img/image_01.jpg" alt="" />
+				<a href="/img/image_01.jpg" class="thumbnail">
+				  <img src="/img/image_01.jpg" alt="" />
 				  <span class="caption"><i class="icon-plus-sign"></i></span>
 				</a>
 			</li>
 			
 			<li class="span4">
-				<a href="assets/img/image_02.jpg" class="thumbnail">
-				  <img src="assets/img/image_02.jpg" alt="" />
+				<a href="/img/image_02.jpg" class="thumbnail">
+				  <img src="/img/image_02.jpg" alt="" />
 				  <span class="caption"><i class="icon-plus-sign"></i></span>
 				</a>
 			</li>
 			
 			<li class="span4">
-				<a href="assets/img/image_03.jpg" class="thumbnail">
-				  <img src="assets/img/image_03.jpg" alt="" />
+				<a href="/img/image_03.jpg" class="thumbnail">
+				  <img src="/img/image_03.jpg" alt="" />
 				  <span class="caption"><i class="icon-plus-sign"></i></span>
 				</a>
 			</li>
 			
 			<li class="span4">
-				<a href="assets/img/image_04.jpg" class="thumbnail">
-				  <img src="assets/img/image_04.jpg" alt="" />
+				<a href="/img/image_04.jpg" class="thumbnail">
+				  <img src="/img/image_04.jpg" alt="" />
 				  <span class="caption"><i class="icon-plus-sign"></i></span>
 				</a>
 			</li>
 			
 			<li class="span4">
-				<a href="assets/img/image_05.jpg" class="thumbnail">
-				  <img src="assets/img/image_05.jpg" alt="" />
+				<a href="/img/image_05.jpg" class="thumbnail">
+				  <img src="/img/image_05.jpg" alt="" />
 				  <span class="caption"><i class="icon-plus-sign"></i></span>
 				</a>
 			</li>
 			
 			<li class="span4">
-				<a href="assets/img/image_06.jpg" class="thumbnail">
-				  <img src="assets/img/image_06.jpg" alt="" />
+				<a href="/img/image_06.jpg" class="thumbnail">
+				  <img src="/img/image_06.jpg" alt="" />
 				  <span class="caption"><i class="icon-plus-sign"></i></span>
 				</a>
 			</li>
 			
 			<li class="span4">
-				<a href="assets/img/image_07.jpg" class="thumbnail">
-				  <img src="assets/img/image_07.jpg" alt="" />
+				<a href="/img/image_07.jpg" class="thumbnail">
+				  <img src="/img/image_07.jpg" alt="" />
 				  <span class="caption"><i class="icon-plus-sign"></i></span>
 				</a>
 			</li>
 			
 			<li class="span4">
-				<a href="assets/img/image_08.jpg" class="thumbnail">
-				  <img src="assets/img/image_08.jpg" alt="" />
+				<a href="/img/image_08.jpg" class="thumbnail">
+				  <img src="/img/image_08.jpg" alt="" />
 				  <span class="caption"><i class="icon-plus-sign"></i></span>
 				</a>
 			</li>
 			
 			<li class="span4">
-				<a href="assets/img/image_09.jpg" class="thumbnail">
-				  <img src="assets/img/image_09.jpg" alt="" />
+				<a href="/img/image_09.jpg" class="thumbnail">
+				  <img src="/img/image_09.jpg" alt="" />
 				  <span class="caption"><i class="icon-plus-sign"></i></span>
 				</a>
 			</li>
@@ -458,12 +433,3 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/jquery.ui.map.js"></script>
-    <script type="text/javascript" src="assets/js/shadowbox/shadowbox.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.scrollTo.js"></script>
-    <script src="assets/js/portfolio.js"></script>
-
-</body>
-</html>
