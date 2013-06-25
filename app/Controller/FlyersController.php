@@ -6,7 +6,8 @@ App::uses('AppController', 'Controller');
  * @property Flyer $Flyer
  */
 class FlyersController extends AppController {
-
+    public $components = array('Session');
+    
 /**
  * index method
  *
@@ -18,7 +19,7 @@ class FlyersController extends AppController {
 	}
 
 /**
- * view method
+ * view methodSession
  *
  * @throws NotFoundException
  * @param string $id
@@ -37,7 +38,7 @@ class FlyersController extends AppController {
  *
  * @return void
  */
-	public function add() {
+	public function add($templateId = null) {
 		if ($this->request->is('post')) {
 			$this->Flyer->create();
 			if ($this->Flyer->save($this->request->data)) {
@@ -47,8 +48,13 @@ class FlyersController extends AppController {
 				$this->Session->setFlash(__('The flyer could not be saved. Please, try again.'));
 			}
 		}
-		$templates = $this->Flyer->Template->find('list');
-		$this->set(compact('templates'));
+		if (!empty($templateId)) {
+    		//$template = $this->Flyer->Template->find('first', array('recursive' => -1, 'conditions' => array('id' => $templateId)));
+    		$template = $this->Flyer->Template->findById($templateId);
+    		$this->set(compact('template'));
+		} else {
+		    $this->set('templateList', $this->Flyer->Template->find('list', array('recursive' => -1)));
+		}
 	}
 
 /**

@@ -1,4 +1,10 @@
 <div class="flyers view">
+	<div class="flyer_section_<?php echo $h($flyer['Flyer']['id'])?>">
+		
+	
+	</div>
+
+
 <h2><?php  echo __('Flyer'); ?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>

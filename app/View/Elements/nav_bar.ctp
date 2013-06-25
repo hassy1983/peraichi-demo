@@ -6,7 +6,7 @@
 		
 			<ul class="nav main-nav">
 				<li>
-					<a href="#services">Create</a>
+					<?php echo $this->Html->link('Create', array('controller' => 'templates'))?>
 				</li>
 				<li>
 					//
@@ -18,7 +18,7 @@
 					//
 				</li>
 				<li>
-					<a href="#about">About</a>
+					<a href="#">About</a>
 				</li>
 				<li>
 					//

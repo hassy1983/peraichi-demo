@@ -1,9 +1,17 @@
+<div style="float:right">
+<?php echo $this->Html->image($template['Template']['img_path'], array('width' => '400px', 'height' => '500px'));?>
+</div>
 <div class="flyers form">
 <?php echo $this->Form->create('Flyer'); ?>
 	<fieldset>
 		<legend><?php echo __('Add Flyer'); ?></legend>
 	<?php
-		echo $this->Form->input('template_id');
+		//echo $this->Form->input('template_id');
+		if (!empty($template)) {
+    		echo $this->Form->hidden('template_id', array('value' => $template['Template']['id']));
+		} else {
+		    $this->Form->input('template_id');
+		}
 		echo $this->Form->input('title');
 		echo $this->Form->input('subtitle');
 		echo $this->Form->input('text');
