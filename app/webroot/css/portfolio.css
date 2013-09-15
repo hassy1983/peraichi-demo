@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
-.thumbnails li a.thumbnail .caption {
+.thumbnails a.thumbnail .caption {
 	display: block;
 	background: #fbbf3a;
 	padding: 0;
@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5, h6 {
 	transition: all 0.1s ease-in-out;
 }
 
-.thumbnails li a.thumbnail:hover .caption {;
+.thumbnails a.thumbnail:hover .caption {
 	opacity: 0.9;
 	-webkit-transition: all 0.1s ease-in-out;
 	-moz-transition: all 0.1s ease-in-out;
@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
 	transition: all 0.1s ease-in-out;
 }
 
-.thumbnails li a.thumbnail .caption i {
+.thumbnails a.thumbnail .caption i {
 	display: block;
 	font-size: 40px;
 	color: #1A1A1A;
@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
 	transition: all 0.2s ease-in-out;
 }
 
-.thumbnails li a.thumbnail:hover .caption i {
+.thumbnails a.thumbnail:hover .caption i {
 	opacity: 1;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
