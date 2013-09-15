@@ -1,432 +1,90 @@
-	<div class="page-about" id="about">
+<script style="text/javascript">
+$(document).ready(function(){
+    $('#ca-container').contentcarousel({
+        // speed for the sliding animation
+        sliderSpeed     : 500,
+        // easing for the sliding animation
+        sliderEasing    : 'easeOutExpo',
+        // speed for the item animation (open / close)
+        itemSpeed       : 500,
+        // easing for the item animation (open / close)
+        itemEasing      : 'easeOutExpo',
+        // number of items to scroll at a time
+        scroll          : 1
+    });
+	Shadowbox.init({
+	    // skip the automatic setup again, we do this later manually
+	    skipSetup: true
+	});
 	
+	window.onload = function() {
+	
+	    // set up all anchor elements with a "thumbnail" class to work with Shadowbox
+	    Shadowbox.setup("a.thumbnail");
+	
+	};
+});
+</script>
+<?php 
+$templates = array(
+    array(
+        'Template' => array(
+            'title' => 'FRONT ROW',
+            'url' => '/img/templates/simple_landing_page/front_row.png',
+            'description' => 'FRONT ROW is a simple landing page theme.<br />FRONT ROW はシンプルなランディングページテーマです。サービスの紹介に適しています。'
+        )
+    ),
+    array(
+        'Template' => array(
+            'title' => 'Lando',
+            'url' => '/img/templates/simple_landing_page/Lando.png',
+            'description' => 'Lando is a simple landing page theme.<br />Lando はシンプルなランディングページテーマです。サービスの紹介に適しています。'
+        ),
+    ),
+    array(
+        'Template' => array(
+            'title' => 'clean canbas',
+            'url' => '/img/templates/simple_landing_page/clean_canbas.png',
+            'description' => 'clean canbas is a simple landing page theme.<br />clean canbas はシンプルなランディングページテーマです。サービスの紹介に適しています。'
+        ),
+    ),
+    array(
+        'Template' => array(
+            'title' => 'Sunrise.png',
+            'url' => '/img/templates/app_landing_page/Sunrise.png',
+            'description' => 'Sunrise is a simple landing page theme.<br />Sunrise はシンプルなランディングページテーマです。サービスの紹介に適しています。'
+        ),
+    ),
+)
+?>
 		<div class="container">
-		
-			<div class="page-heading">
-				<h1><span>//</span> About</h1>
-			</div>
-			
-			<div class="row">
-			
-				<div class="span6 content">
-					
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
+			<div id="ca-container" class="ca-container">
+				<div class="ca-wrapper thumbnails">
+					<?php foreach($templates as $template):?>
+					<div class="ca-item ca-item-1">
+						<div class="ca-item-main">
+							<?php
+							echo $this->Html->link(
+							    $this->Html->image($template['Template']['url'], array('alt' => 'front_row'))
+							    . $this->Html->tag('span', $this->Html->tag('i', '', array('class' => 'icon-plus-sign')), array('class' => 'caption')),
+							    $template['Template']['url'],
+							    array('escape' => false, 'class' => 'thumbnail')
+							);
+							echo $this->Html->link('説明を見る', array('#'), array('class' => 'ca-more'));
+							?>
+						</div>
+						<div class="ca-content-wrapper">
+							<div class="ca-content">
+								<h6><?php echo $template['Template']['title']?></h6>
+								<a href="#" class="ca-close">close</a>
+								<div class="ca-content-text"><?php echo $template['Template']['description']?></div>
+								<ul>
+									<li><a href="#">このテンプレートでサイトを作る</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<?php endforeach;?>
 				</div>
-			
-				<div class="span6 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-			</div>
-			
-		</div>
-	
-	</div>
-	
-	<div class="page-work" id="work">
-	
-	<div class="container">
-		
-		<div class="page-heading">
-			<h1><span>//</span> Work</h1>
-		</div>
-		
-		<ul class="thumbnails">
-		
-			<li class="span4">
-				<a href="/img/image_01.jpg" class="thumbnail">
-				  <img src="/img/image_01.jpg" alt="" />
-				  <span class="caption"><i class="icon-plus-sign"></i></span>
-				</a>
-			</li>
-			
-			<li class="span4">
-				<a href="/img/image_02.jpg" class="thumbnail">
-				  <img src="/img/image_02.jpg" alt="" />
-				  <span class="caption"><i class="icon-plus-sign"></i></span>
-				</a>
-			</li>
-			
-			<li class="span4">
-				<a href="/img/image_03.jpg" class="thumbnail">
-				  <img src="/img/image_03.jpg" alt="" />
-				  <span class="caption"><i class="icon-plus-sign"></i></span>
-				</a>
-			</li>
-			
-			<li class="span4">
-				<a href="/img/image_04.jpg" class="thumbnail">
-				  <img src="/img/image_04.jpg" alt="" />
-				  <span class="caption"><i class="icon-plus-sign"></i></span>
-				</a>
-			</li>
-			
-			<li class="span4">
-				<a href="/img/image_05.jpg" class="thumbnail">
-				  <img src="/img/image_05.jpg" alt="" />
-				  <span class="caption"><i class="icon-plus-sign"></i></span>
-				</a>
-			</li>
-			
-			<li class="span4">
-				<a href="/img/image_06.jpg" class="thumbnail">
-				  <img src="/img/image_06.jpg" alt="" />
-				  <span class="caption"><i class="icon-plus-sign"></i></span>
-				</a>
-			</li>
-			
-			<li class="span4">
-				<a href="/img/image_07.jpg" class="thumbnail">
-				  <img src="/img/image_07.jpg" alt="" />
-				  <span class="caption"><i class="icon-plus-sign"></i></span>
-				</a>
-			</li>
-			
-			<li class="span4">
-				<a href="/img/image_08.jpg" class="thumbnail">
-				  <img src="/img/image_08.jpg" alt="" />
-				  <span class="caption"><i class="icon-plus-sign"></i></span>
-				</a>
-			</li>
-			
-			<li class="span4">
-				<a href="/img/image_09.jpg" class="thumbnail">
-				  <img src="/img/image_09.jpg" alt="" />
-				  <span class="caption"><i class="icon-plus-sign"></i></span>
-				</a>
-			</li>
-			
-		</ul>
-		
-	</div>
-	
-	</div>
-	
-	<div class="page-about" id="about">
-	
-		<div class="container">
-		
-			<div class="page-heading">
-				<h1><span>//</span> About</h1>
-			</div>
-			
-			<div class="row">
-			
-				<div class="span6 content">
-					
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-				<div class="span6 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-			</div>
-			
-			<div class="row">
-			
-				<div class="span4 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-				<div class="span4 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-				<div class="span4 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-			</div>
-			
-			<div class="row">
-			
-				<div class="span3 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-				<div class="span3 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-				<div class="span3 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-				<div class="span3 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-			</div>
-			
-			<div class="row">
-			
-				<div class="span2 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-				<div class="span2 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-				<div class="span2 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-				<div class="span2 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet <a href="">dolor lobortis ut</a>. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-				<div class="span2 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-				<div class="span2 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-				
-				</div>
-			
-			</div>
-			
-		</div>
-	
-	</div>
-	
-	<div class="page-services" id="services">
-	
-		<div class="container">
-		
-			<div class="page-heading">
-				<h1><span>//</span> Services</h1>
-			</div>
-			
-			<div class="row">
-			
-				<div class="span6 content">
-					
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-					
-					<h2>Cras augue ligula</h2>
-					
-					<ul>
-						<li>rutrum non viverra aliquam, tristique nec erat</li>
-						<li>In eget hendrerit purus.</li>
-						<li>Proin malesuada arcu quis libero tempor in iaculis odio semper.</li>
-						<li>Nunc sed sem nisl, et commodo tortor.</li>
-						<li>Nunc suscipit placerat mi, ut tempor orci convallis ut.</li>
-						<li>Etiam at eros in massa cursus blandit sit amet vitae arcu.</li>
-						<li>Duis ultrices gravida sem vel interdum. Sed at dictum mauris.</li>
-						<li>Nunc sed sem nisl, et commodo tortor.</li>
-					</ul>
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-					
-					<h2>Cras augue ligula</h2>
-					
-					<ul>
-						<li>rutrum non viverra aliquam, tristique nec erat</li>
-						<li>In eget hendrerit purus.</li>
-						<li>Proin malesuada arcu quis libero tempor in iaculis odio semper.</li>
-						<li>Nunc sed sem nisl, et commodo tortor.</li>
-						<li>Nunc suscipit placerat mi, ut tempor orci convallis ut.</li>
-						<li>Etiam at eros in massa cursus blandit sit amet vitae arcu.</li>
-						<li>Duis ultrices gravida sem vel interdum. Sed at dictum mauris.</li>
-						<li>Nunc sed sem nisl, et commodo tortor.</li>
-					</ul>
-				
-				</div>
-			
-				<div class="span6 content">
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-					
-					<h2>Cras augue ligula</h2>
-					
-					<ul>
-						<li>rutrum non viverra aliquam, tristique nec erat</li>
-						<li>In eget hendrerit purus.</li>
-						<li>Proin malesuada arcu quis libero tempor in iaculis odio semper.</li>
-						<li>Nunc sed sem nisl, et commodo tortor.</li>
-						<li>Nunc suscipit placerat mi, ut tempor orci convallis ut.</li>
-						<li>Etiam at eros in massa cursus <a href="">blandit sit amet</a> vitae arcu.</li>
-						<li>Duis ultrices gravida sem vel interdum. Sed at dictum mauris.</li>
-						<li>Nunc sed sem nisl, et commodo tortor.</li>
-					</ul>
-				
-					<h2>Maecenas feugiat lectus quam</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-					
-					<h2>Cras augue ligula</h2>
-					
-					<ul>
-						<li>rutrum non viverra aliquam, tristique nec erat</li>
-						<li>In eget hendrerit purus.</li>
-						<li>Proin malesuada arcu quis libero tempor in iaculis odio semper.</li>
-						<li>Nunc sed sem nisl, et commodo tortor.</li>
-						<li>Nunc suscipit placerat mi, ut tempor orci convallis ut.</li>
-						<li>Etiam at eros in massa cursus blandit sit amet vitae arcu.</li>
-						<li>Duis ultrices gravida sem vel interdum. Sed at dictum mauris.</li>
-						<li>Nunc sed sem nisl, et commodo tortor.</li>
-					</ul>
-				
-				</div>
-			
-			</div>
-			
-		</div>
-	
-	</div>
-	
-	<div class="page-contact" id="contact">
-	
-		<div class="container">
-		
-			<div class="page-heading">
-				<h1><span>//</span> Contact</h1>
-			</div>
-			
-			<div class="row">
-			
-				<div class="span6 content">
-					
-					<h2>Contact Us</h2>
-					
-					<p>Nullam volutpat lacinia nisi, nec laoreet dolor lobortis ut. Suspendisse quis nunc a arcu laoreet iaculis. Morbi vehicula metus ut massa tristique non aliquet nibh tempus. Maecenas feugiat lectus quam, a ornare ligula. Phasellus vitae aliquam quam. Integer semper sagittis sagittis.</p>
-					
-					<form class="form-horizontal contact-form">
-			        <fieldset>
-			          <div class="control-group">
-			            <label class="control-label" for="input01">Name</label>
-			            <div class="controls">
-			              <input type="text" class="input-xlarge" id="input01">
-			            </div>
-			          </div>
-			          <div class="control-group">
-			            <label class="control-label" for="input02">Email Address</label>
-			            <div class="controls">
-			              <input type="text" class="input-xlarge" id="input02">
-			            </div>
-			          </div>
-			          <div class="control-group">
-			            <label class="control-label" for="select01">Where did you hear about us?</label>
-			            <div class="controls">
-			              <select id="select01">
-			                <option>something</option>
-			                <option>2</option>
-			                <option>3</option>
-			                <option>4</option>
-			                <option>5</option>
-			              </select>
-			            </div>
-			          </div>
-			          <div class="control-group">
-			            <label class="control-label" for="textarea">Your Message</label>
-			            <div class="controls">
-			              <textarea class="input-xlarge" id="textarea" rows="8"></textarea>
-			            </div>
-			          </div>
-			          <div class="form-actions">
-			            <button type="submit" class="btn btn-inverse">Save changes</button>
-			            <button class="btn">Cancel</button>
-			          </div>
-			        </fieldset>
-			      </form>
-					
-				</div>
-			
-				<div class="span6 content">
-					
-					<div id="map_canvas"></div>
-					
-					<h3>Contact Information</h3>
-					<p>If you have a question don't hesitate to get in touch:</p>
-					<p>Address line 1<br />Address line 2<br />City<br />ZIP/Post Code</p>
-					<p>
-						<strong>Tel:</strong> 0123 456 789<br />
-						<strong>Email:</strong> <a href="">info@website.com</a>
-					</p>
-				
-				</div>
-			
-			</div>
-			
-		</div>
-	
-	</div>
-	
-	<!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+            </div><!-- ca-wrapper -->
+        </div><!-- ca-container -->
