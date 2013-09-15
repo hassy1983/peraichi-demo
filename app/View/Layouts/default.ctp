@@ -30,24 +30,21 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php
 		echo $this->Html->meta('icon');
 
-		//echo $this->Html->css('cake.generic');
 		echo $this->Html->css('bootstrap.css');
 		echo $this->Html->css('portfolio.css');
 		echo $this->Html->css('font-awesome.css');
 		echo $this->Html->css('font-awesome-ie7.css');
 		echo $this->Html->css('../js/shadowbox/shadowbox.css');
+		echo $this->Html->css('jquery.jscrollpane.css');
+		echo $this->Html->css('style.css');
 		
-		/*
 		echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js');
-		//echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js');
 		echo $this->Html->script('bootstrap.js');
-		echo $this->Html->script('jquery.ui.map.js');
 		echo $this->Html->script('shadowbox/shadowbox.js');
-		echo $this->Html->script('jquery.scrollTo.js');
-		echo $this->Html->script('portfolio.js');
-		*/
-		//echo $this->Html->script('jquery-ui.js');
-		
+		echo $this->Html->script('jquery.easing.1.3.js');
+		echo $this->Html->script('jquery.mousewheel.js');
+		echo $this->Html->script('jquery.contentcarousel.js');
+
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
@@ -65,15 +62,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
-		<?php 
-		echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js');
-		//echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js');
-		echo $this->Html->script('bootstrap.js');
-		echo $this->Html->script('jquery.ui.map.js');
-		echo $this->Html->script('shadowbox/shadowbox.js');
-		echo $this->Html->script('jquery.scrollTo.js');
-		echo $this->Html->script('portfolio.js');
-		?>
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
