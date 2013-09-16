@@ -51,6 +51,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	?>
 </head>
 <body>
+
 	<div id="container">
 		<div id="header">
 		<?php echo $this->element('nav_bar'); ?>
@@ -64,6 +65,13 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<div id="footer">
 		</div>
 	</div>
+	<br/>
+	<br/>
+	<br/>
+    <br/>
+    <br/>
+
+
 	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>
