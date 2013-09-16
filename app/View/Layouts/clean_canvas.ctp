@@ -16,6 +16,35 @@
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <?php
+        echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js');
+        echo $this->Html->script('jquery_jeditable/jquery.jeditable.js');
+    ?>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        $('.edit').editable('/responses/text', {
+            indicator : 'Saving...',
+            tooltip   : 'Click to edit...'
+        });
+        $('.edit_area').editable('/responses/text', {
+            type      : 'textarea',
+            cancel    : 'Cancel',
+            submit    : 'OK',
+            indicator : '<img src="/js/jquery_jeditable/img/indicator.gif">',
+            tooltip   : 'Click to edit...',
+            data: function(value, settings) {
+                var retval = value.replace(/<br\s*\/?>\n?/gi, '\n');
+                return retval;
+            },
+            callback  : function(value, settings) {
+                var retval = value.replace(/\n/gi, "<br>\n");
+                $(this).html(retval);
+            }
+        });
+    });
+    </script>
 </head>
 <body class="pull_top">
     <?php echo $this->fetch('content'); ?>

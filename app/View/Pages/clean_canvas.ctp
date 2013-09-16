@@ -85,9 +85,7 @@
                     </div>
                     <div class="text">
                         <h6>Responsive theme</h6>
-                        <p>
-                            There are many variations of passages of generators on the  embarrassing hidden in   content here making it look like.
-                        </p>
+                        <p class="edit_area">There are many variations of passages of generators on the  embarrassing hidden in   content here making it look like.</p>
                     </div>
                 </div>
                 <!-- Feature -->
@@ -420,7 +418,6 @@
 </footer>
 
 <!-- Scripts -->
-<script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="/js/clean_canvas/bootstrap.min.js"></script>
 <script src="/js/clean_canvas/theme.js"></script>
 
