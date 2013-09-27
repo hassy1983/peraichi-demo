@@ -80,7 +80,7 @@ $templates = array(
 								<a href="#" class="ca-close">close</a>
 								<div class="ca-content-text"><?php echo $template['Template']['description']?></div>
 								<ul>
-									<li><a href="pages/clean_canvas">このテンプレートでサイトを作る</a></li>
+									<li><a href="pages/cafe">このテンプレートでサイトを作る</a></li>
 								</ul>
 							</div>
 						</div>
