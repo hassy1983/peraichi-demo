@@ -9,6 +9,7 @@
     <link href="/css/clean_canvas/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/clean_canvas/theme.css">
     <link rel="stylesheet" href="/css/clean_canvas/index.css" type="text/css" media="screen" />
+    <?echo $this->Html->css('common.css');?>
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="/css/clean_canvas/animate.css" media="screen, projection">
@@ -47,6 +48,7 @@
     </script>
 </head>
 <body class="pull_top">
+    <?php echo $this->element('nav_bar'); ?>
     <?php echo $this->fetch('content'); ?>
 </body>
 </html>

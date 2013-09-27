@@ -1,19 +1,7 @@
-<?php $this->layout = 'clean_canvas' ?>
-<div class="navbar transparent navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="index.html">
-                <strong>CLEAN CANVAS</strong>
-            </a>
-        </div>
-    </div>
-</div>
-
+<?php
+Configure::write('debug', 0);
+$this->layout = 'clean_canvas'
+?>
 <section id="feature_slider" class="">
     <!--
         Each slide is composed by <img> and .info

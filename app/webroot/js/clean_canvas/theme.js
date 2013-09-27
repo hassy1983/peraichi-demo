@@ -1,13 +1,4 @@
 $(function () {
-    $(window).scroll(function() {
-        if ($(".navbar").offset().top>30) {
-            $(".navbar-inner").addClass("sticky");
-        }
-        else {
-            $(".navbar-inner").removeClass("sticky");
-        }
-    });
-
     // Flex
     if ($(".flexslider").length) {
         $('.flexslider').flexslider();

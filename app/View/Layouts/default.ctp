@@ -36,8 +36,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->Html->css('font-awesome-ie7.css');
 		echo $this->Html->css('../js/shadowbox/shadowbox.css');
 		echo $this->Html->css('jquery.jscrollpane.css');
-		echo $this->Html->css('style.css');
-		
+        echo $this->Html->css('style.css');
+        echo $this->Html->css('common.css');
+
 		echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js');
 		echo $this->Html->script('bootstrap.js');
 		echo $this->Html->script('shadowbox/shadowbox.js');
@@ -65,12 +66,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<div id="footer">
 		</div>
 	</div>
-	<br/>
-	<br/>
-	<br/>
-    <br/>
-    <br/>
-
 
 	<?php echo $this->element('sql_dump'); ?>
 </body>
