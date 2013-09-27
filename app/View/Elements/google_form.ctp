@@ -62,9 +62,9 @@
                         </tr></tbody></table>
                 </div></ol></form>
     </div>
-    <!-- <div id="docs-aria-speakable" class="docs-a11y-ariascreenreader-speakable docs-offscreen" aria-live="assertive" role="region" aria-atomic></div> -->
+    <div id="docs-aria-speakable" class="docs-a11y-ariascreenreader-speakable docs-offscreen" aria-live="assertive" role="region" aria-atomic style="display: none;"></div> <!--display:none追加-->
 </div>
-<script type='text/javascript' src='https://docs.google.com/static/forms/client/js/2310864441-formviewer_prd.js'></script> <!--URL変更-->
+<script type='text/javascript' src='https://docs.google.com/static/forms/client/js/1249312147-formviewer_prd.js'></script> <!--URL変更-->
 <script type="text/javascript">H5F.setup(document.getElementById('ss-form'));_initFormViewer(
         "[100,\x22#ccc\x22,[]\n]\n");
 </script>
