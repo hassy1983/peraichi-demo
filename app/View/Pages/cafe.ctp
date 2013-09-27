@@ -1,4 +1,8 @@
-<?php 
+<?php
+Configure::write('debug', 0);
+$this->layout = 'cafe'
+?>
+<?php
 $this->Html->css('cafe', null, array('inline' => false)); 
 ?>
 <?php echo $this->element('nav_bar');?>
