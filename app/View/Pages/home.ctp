@@ -30,6 +30,13 @@ $(document).ready(function(){
 $templates = array(
     array(
         'Template' => array(
+            'title' => 'Peraichi cafe',
+            'url' => '/img/templates/simple_landing_page/Peraichi_cafe.png',
+            'description' => 'Sunrise is a simple landing page theme.<br />Sunrise はシンプルなランディングページテーマです。サービスの紹介に適しています。'
+        ),
+    ),
+    array(
+        'Template' => array(
             'title' => 'FRONT ROW',
             'url' => '/img/templates/simple_landing_page/front_row.png',
             'description' => 'FRONT ROW is a simple landing page theme.<br />FRONT ROW はシンプルなランディングページテーマです。サービスの紹介に適しています。'
@@ -49,13 +56,6 @@ $templates = array(
             'description' => 'clean canbas is a simple landing page theme.<br />clean canbas はシンプルなランディングページテーマです。サービスの紹介に適しています。'
         ),
     ),
-    array(
-        'Template' => array(
-            'title' => 'Sunrise.png',
-            'url' => '/img/templates/app_landing_page/Sunrise.png',
-            'description' => 'Sunrise is a simple landing page theme.<br />Sunrise はシンプルなランディングページテーマです。サービスの紹介に適しています。'
-        ),
-    ),
 )
 ?>
 		<div class="container">
@@ -66,7 +66,7 @@ $templates = array(
 						<div class="ca-item-main">
 							<?php
 							echo $this->Html->link(
-							    $this->Html->image($template['Template']['url'], array('alt' => 'front_row'))
+							    $this->Html->image($template['Template']['url'], array('alt' => 'Peraichi cafe'))
 							    . $this->Html->tag('span', $this->Html->tag('i', '', array('class' => 'icon-plus-sign')), array('class' => 'caption')),
 							    $template['Template']['url'],
 							    array('escape' => false, 'class' => 'thumbnail')

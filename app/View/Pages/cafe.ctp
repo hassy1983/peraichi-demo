@@ -9,7 +9,7 @@ $this->Html->css('cafe', null, array('inline' => false));
 	<div id="wrapper">
 		<header>
 			<div id ="h_contents">
-				<h1><?php echo $this->Html->Image("/img/cafe/header_logo.png", array("class" => "logo_img"));?>　Peraichi Cafe</h1>
+				<h1><?php echo $this->Html->Image("/img/cafe/header_logo.png", array("class" => "logo_img"));?>　<span class="edit">Peraichi Cafe</span></h1>
 				<ul id ="nav"> 
 					<li id = "nav1"><a href="#content1"><span class="edit">無農薬野菜だから、安心。</span></a></li>
 					<li id = "nav2"><a href="#content2"><span class="edit">メニュー</span></a></li>

@@ -7,21 +7,25 @@
             url: '/sites/add',
             data: postData,
             success: function(data) {
+                var w=window.open();w.location.href='/sites/view/'+data;
+                //alert(data);
+                //var decodedData = $.secureEvalJSON(data);
                 /*
-                var decodedData = $.secureEvalJSON(data);
                 if (decodedData['success'] != null) {
                     alert(decodedData['success']);
                 } else if (decodedData['error'] != null) {
                     alert(decodedData['error']);
                 }
                 */
-            },
+            }
+            /*
             error: function() {
                 alert('通信に失敗しました。');
             },
             complete: function() {
                 alert('保存しました。');
             }
+            */
         });
     };
 

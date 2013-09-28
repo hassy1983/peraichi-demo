@@ -47,11 +47,11 @@ class SitesController extends AppController {
 			$this->Site->create();
             $this->log($this->request->data);
 			if ($this->Site->save($this->request->data)) {
-                $this->log('saved');
-                //$this->Session->setFlash(__('The site has been saved'));
-                //$this->redirect(array('action' => 'index'));
+                $this->log($this->id);
+                $this->set('message', $this->Site->getLastInsertID());
+                return;
             } else {
-                //$this->Session->setFlash(__('The site could not be saved. Please, try again.'));
+                $this->set('message', '失敗');
             }
             $this->log($this->validationErrors);
         }
