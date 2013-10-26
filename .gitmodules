@@ -4,3 +4,6 @@
 [submodule "app/webroot/js/jquery_jeditable"]
 	path = app/webroot/js/jquery_jeditable
 	url = https://github.com/tuupola/jquery_jeditable.git
+[submodule "Plugin/TwitterBootstrap"]
+	path = Plugin/TwitterBootstrap
+	url = git://github.com/slywalker/TwitterBootstrap.git
