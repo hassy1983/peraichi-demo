@@ -33,4 +33,10 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
     var $components = array('DebugKit.Toolbar');
+    public $helpers = array(
+        'Session',
+        'Html' => array('className' => 'TwitterBootstrap.BootstrapHtml'),
+        'Form' => array('className' => 'TwitterBootstrap.BootstrapForm'),
+        'Paginator' => array('className' => 'TwitterBootstrap.BootstrapPaginator'),
+    );
 }
