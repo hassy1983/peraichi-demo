@@ -1,0 +1,7 @@
+.select_element {
+    border:5px dotted;
+}
+.row:hover {
+    cursor:pointer;
+    background-color:#CBEFEF;
+}
